@@ -8,100 +8,109 @@
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="shell header-inner">
-      <a class="site-name" href="#top">Pengyu Zhang</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a><a href="#research">Research</a><a href="#engineering">Engineering</a><a href="#publications">Publications</a><a href="#service">Service</a>
-        <a class="contact-link" href="mailto:zhangelsu@gmail.com">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="shell profile" id="about">
+  <div class="page-shell">
+    <aside class="sidebar">
       <img class="profile-photo" src="images/pengyu_github.jpg" alt="Pengyu Zhang">
-      <div class="profile-copy">
-        <p class="eyebrow">Profile</p>
-        <h1>Pengyu Zhang</h1>
-        <p class="role">Senior Engineering Manager at Uber</p>
-        <p class="intro">I lead teams building large-scale data systems and machine-learning capabilities for threat detection and AI safety. My work spans distributed systems, enterprise AI security, networked systems, and applied machine learning.</p>
-        <div class="profile-links" aria-label="Professional links">
+      <h1>Pengyu Zhang</h1>
+      <p class="role">Senior Engineering Manager<br>Uber</p>
+
+      <section class="sidebar-section connect" aria-labelledby="connect-title">
+        <h2 id="connect-title">Connect</h2>
+        <div class="sidebar-links">
           <a href="mailto:zhangelsu@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/pengyu-zhang-5a192a28/">LinkedIn</a>
-          <a href="https://scholar.google.com/citations?hl=en&amp;user=P5Im3XwAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a>
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=P5Im3XwAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Scholar</a>
           <a href="https://github.com/pengyuzhang">GitHub</a>
+          <a href="https://www.linkedin.com/in/pengyu-zhang-5a192a28/">LinkedIn</a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="shell section" id="research">
-      <div class="section-heading">
-        <h2>Research and engineering focus</h2>
-        <p>Systems research informed by production constraints and measurable security outcomes.</p>
-      </div>
-      <div class="focus-grid">
-        <article class="focus-card"><span>01</span><h3>Enterprise AI security</h3><p>Prompt-injection defense, jailbreak detection, benchmarking, and safety controls for AI agents.</p></article>
-        <article class="focus-card"><span>02</span><h3>Distributed systems</h3><p>Large-scale data pipelines, data lakes, secure containers, and high-performance cloud platforms.</p></article>
-        <article class="focus-card"><span>03</span><h3>Machine learning</h3><p>Detection models, evaluation, and production ML systems operating at enterprise scale.</p></article>
-        <article class="focus-card"><span>04</span><h3>Agent infrastructure</h3><p>Observability and security for MCP, tool-using models, and enterprise agent deployments.</p></article>
-      </div>
-    </section>
+      <section class="sidebar-section sidebar-expertise" aria-labelledby="expertise-title">
+        <h2 id="expertise-title">Expertise</h2>
+        <ul class="tags"><li>Enterprise AI security</li><li>Distributed systems</li><li>Machine learning</li><li>Agent infrastructure</li></ul>
+      </section>
 
-    <section class="shell section project" id="engineering">
-      <div class="project-copy">
-        <p class="eyebrow">Open-source engineering</p>
-        <h2>ADR — Agentic Detection System</h2>
-        <p>An open-source platform for security observability, benchmarking, and threat detection across enterprise agentic AI workflows. Published at MLSys 2026.</p>
-        <div class="inline-links"><a href="https://github.com/uber/ADR">Repository <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2605.17380">Paper <span aria-hidden="true">↗</span></a></div>
-      </div>
-      <div class="pipeline" aria-label="ADR detection pipeline diagram">
-        <p>ADR / Detection pipeline</p>
-        <div class="pipeline-steps"><span>Agent trace</span><b>→</b><span>Policy checks</span><b>→</b><span>Risk score</span></div>
-        <div class="alert-row"><i></i> Prompt-injection pattern detected · severity: high</div>
-      </div>
-    </section>
+      <section class="sidebar-section sidebar-education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="credential"><strong>Ph.D., UMass Amherst</strong><span>Computer Science</span></div>
+        <div class="credential"><strong>Stanford University</strong><span>Postdoctoral Researcher</span></div>
+        <div class="credential"><strong>Tsinghua University</strong><span>B.E. and M.E.</span></div>
+      </section>
 
-    <section class="shell section experience">
-      <h2>Engineering leadership</h2>
-      <div class="experience-list">
-        <div class="experience-row"><strong>Uber</strong><span>Senior Engineering Manager</span><small>Data infrastructure · ML · AI safety</small></div>
-        <div class="experience-row"><strong>Alibaba Cloud</strong><span>Infrastructure and platform leadership</span><small>Cloud systems · Seattle</small></div>
-        <div class="experience-row"><strong>Stanford</strong><span>Postdoctoral Researcher</span><small>Networked systems</small></div>
-      </div>
-    </section>
+      <nav class="sidebar-section sidebar-nav" aria-label="Page sections">
+        <h2>Navigation</h2>
+        <a href="#research">Research</a><a href="#engineering">Engineering</a><a href="#publications">Publications</a><a href="#service">Awards &amp; service</a>
+      </nav>
+    </aside>
 
-    <section class="shell section" id="publications">
-      <div class="section-heading publications-heading">
-        <div><p class="eyebrow">Selected publications</p><h2>Recent research</h2></div>
-        <a href="publication.html">Full publication list <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="publication-list">
-        <article class="publication-row"><p class="venue">MLSys 2026</p><div><h3><a href="https://arxiv.org/abs/2605.17380">ADR: An Agentic Detection System for Enterprise Agentic AI Security</a></h3><p>Chenning Li, Pan Hu, Justin Xu, et al., <strong>Pengyu Zhang</strong>, et al.</p></div></article>
-        <article class="publication-row"><p class="venue">EuroSys 2025</p><div><h3><a href="https://doi.org/10.1145/3689031.3696066">FastIOV: Fast Startup of Passthrough Network I/O Virtualization for Secure Containers</a></h3><p>Yunzhuo Liu, Junchen Guo, Bo Jiang, Yang Song, <strong>Pengyu Zhang</strong>, et al.</p></div></article>
-        <article class="publication-row"><p class="venue">IMC 2024</p><div><h3><a href="https://doi.org/10.1145/3646547.3688436">Understanding Network Startup for Secure Containers in Multi-Tenant Clouds</a></h3><p>Yunzhuo Liu, Junchen Guo, Bo Jiang, <strong>Pengyu Zhang</strong>, et al.</p></div></article>
-        <article class="publication-row"><p class="venue">MobiCom 2023</p><div><h3><a href="https://doi.org/10.1145/3570361.3613267">X-Plane: A High-Throughput Large-Capacity 5G UPF</a></h3><p>Yunzhuo Liu, Hao Nie, Hui Cai, Bo Jiang, <strong>Pengyu Zhang</strong>, et al.</p></div></article>
-      </div>
-    </section>
+    <div class="main-column">
+      <header class="topbar">
+        <nav aria-label="Primary navigation"><a href="#research">Research</a><a href="#engineering">Engineering</a><a href="#publications">Publications</a><a href="#service">Service</a></nav>
+        <a class="contact-button" href="mailto:zhangelsu@gmail.com">Contact</a>
+      </header>
 
-    <section class="shell section recognition" id="service">
-      <h2>Recognition and service</h2>
-      <div class="recognition-grid">
-        <div><h3>Awards</h3><ul>
-          <li><a href="https://beta.sigmobile.org/articles/acm-sigmobile-doctoral-dissertation-award">ACM SIGMOBILE Doctoral Dissertation Award, 2016</a></li>
-          <li>Outstanding Doctoral Dissertation Award, UMass Amherst, 2016</li><li>MobiCom Best Paper Award Runner-Up, 2014</li><li>UbiComp Honorable Mention Award, 2016</li><li>MobiSys 2017 and SenSys 2016 Best Paper Award nominees</li>
-        </ul></div>
-        <div><h3>Program committees</h3><ul><li>NSDI: 2027</li><li>MobiCom: 2019, 2020, 2021</li><li>MobiSys: 2017, 2019</li><li>CoNEXT: 2018</li></ul></div>
-      </div>
-    </section>
+      <main>
+        <section class="intro" id="research">
+          <p class="eyebrow">Research + engineering</p>
+          <h2>Building secure, scalable AI systems</h2>
+          <p>I lead teams building large-scale data systems and machine-learning capabilities for threat detection and AI safety. My work connects systems research with production engineering.</p>
+        </section>
 
-    <section class="shell background">
-      <p>I received my Ph.D. from UMass Amherst, advised by <a href="https://people.cs.umass.edu/~dganesan/">Deepak Ganesan</a>, and was a postdoctoral researcher at Stanford with <a href="https://www.linkedin.com/in/sachin-katti-72777943/">Sachin Katti</a>. I hold bachelor’s and master’s degrees from Tsinghua University.</p>
-    </section>
-  </main>
+        <section class="focus-grid" aria-label="Research focus">
+          <article><span>01</span><h3>Enterprise AI security</h3><p>Defense, evaluation, and observability</p></article>
+          <article><span>02</span><h3>Distributed systems</h3><p>Data, cloud, and secure containers</p></article>
+          <article><span>03</span><h3>Machine learning</h3><p>Detection models and production ML</p></article>
+          <article><span>04</span><h3>Agent infrastructure</h3><p>MCP and tool-using agent security</p></article>
+        </section>
 
-  <footer class="site-footer">
-    <div class="shell footer-inner"><strong>Pengyu Zhang</strong><p>Distributed systems · Machine learning · Enterprise AI security</p><div><a href="mailto:zhangelsu@gmail.com">Email</a><a href="https://scholar.google.com/citations?hl=en&amp;user=P5Im3XwAAAAJ">Scholar</a><a href="https://github.com/pengyuzhang">GitHub</a><a href="https://www.linkedin.com/in/pengyu-zhang-5a192a28/">LinkedIn</a></div></div>
-  </footer>
+        <section class="featured" id="engineering">
+          <div>
+            <p class="eyebrow">Featured system</p>
+            <h2>ADR — Agentic Detection System</h2>
+            <p>Open-source security observability, benchmarking, and threat detection for enterprise agents.</p>
+            <div class="inline-links"><a href="https://github.com/uber/ADR">Repository ↗</a><a href="https://arxiv.org/abs/2605.17380">MLSys 2026 paper ↗</a></div>
+          </div>
+          <div class="pipeline" aria-label="ADR detection pipeline">
+            <strong>ADR / Detection pipeline</strong>
+            <div class="pipeline-flow"><span>Agent trace</span><b>→</b><span>Policy checks</span><b>→</b><span>Risk score</span></div>
+            <p><i></i> Prompt-injection pattern detected · high severity</p>
+          </div>
+        </section>
+
+        <div class="evidence-grid">
+          <section class="compact-section experience">
+            <h2>Engineering leadership</h2>
+            <div class="experience-row"><strong>Uber</strong><div>Senior Engineering Manager<small>Data infrastructure · ML · AI safety</small></div></div>
+            <div class="experience-row"><strong>Alibaba Cloud</strong><div>Platform leadership<small>Cloud and infrastructure systems</small></div></div>
+            <div class="experience-row"><strong>Stanford</strong><div>Postdoctoral Researcher<small>Networked systems</small></div></div>
+          </section>
+
+          <section class="compact-section publications" id="publications">
+            <div class="compact-heading"><h2>Selected publications</h2><a href="publication.html">Full list ↗</a></div>
+            <article><span>MLSys 2026</span><div><h3><a href="https://arxiv.org/abs/2605.17380">ADR: Agentic Detection for Enterprise AI Security</a></h3><p>Li, Hu, Xu, et al., <strong>Pengyu Zhang</strong>, et al.</p></div></article>
+            <article><span>EuroSys 2025</span><div><h3><a href="https://doi.org/10.1145/3689031.3696066">FastIOV: Passthrough Network I/O Virtualization</a></h3><p>Liu, Guo, Jiang, Song, <strong>Pengyu Zhang</strong>, et al.</p></div></article>
+            <article><span>IMC 2024</span><div><h3><a href="https://doi.org/10.1145/3646547.3688436">Network Startup for Secure Containers</a></h3><p>Liu, Guo, Jiang, <strong>Pengyu Zhang</strong>, et al.</p></div></article>
+            <article><span>MobiCom 2023</span><div><h3><a href="https://doi.org/10.1145/3570361.3613267">X-Plane: A High-Throughput 5G UPF</a></h3></div></article>
+          </section>
+        </div>
+
+        <section class="recognition" id="service">
+          <h2>Recognition and service</h2>
+          <div class="recognition-grid">
+            <div><h3>Awards</h3><ul>
+              <li><a href="https://beta.sigmobile.org/articles/acm-sigmobile-doctoral-dissertation-award">ACM SIGMOBILE Doctoral Dissertation Award</a></li>
+              <li>UMass Outstanding Dissertation Award</li><li>MobiCom Best Paper Runner-Up</li><li>UbiComp Honorable Mention</li><li>MobiSys and SenSys Best Paper nominees</li>
+            </ul></div>
+            <div><h3>Program committees</h3><ul><li>NSDI · 2027</li><li>MobiCom · 2019, 2020, 2021</li><li>MobiSys · 2017, 2019</li><li>CoNEXT · 2018</li></ul></div>
+          </div>
+        </section>
+
+        <section class="background">
+          <p>I received my Ph.D. from UMass Amherst, advised by <a href="https://people.cs.umass.edu/~dganesan/">Deepak Ganesan</a>, and was a postdoctoral researcher at Stanford with <a href="https://www.linkedin.com/in/sachin-katti-72777943/">Sachin Katti</a>. I hold bachelor’s and master’s degrees from Tsinghua University.</p>
+        </section>
+      </main>
+
+      <footer><strong>Pengyu Zhang</strong><span>Distributed systems · Machine learning · Enterprise AI security</span><div><a href="mailto:zhangelsu@gmail.com">Email</a><a href="https://scholar.google.com/citations?hl=en&amp;user=P5Im3XwAAAAJ">Scholar</a><a href="https://github.com/pengyuzhang">GitHub</a><a href="https://www.linkedin.com/in/pengyu-zhang-5a192a28/">LinkedIn</a></div></footer>
+    </div>
+  </div>
 </body>
 </html>
