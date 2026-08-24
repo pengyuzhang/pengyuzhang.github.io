@@ -10,9 +10,10 @@
 <body>
   <div class="page-shell">
     <aside class="sidebar">
-      <img class="profile-photo" src="images/pengyu_github.jpg" alt="Pengyu Zhang">
+      <div class="profile-mark" aria-hidden="true">PZ</div>
       <h1>Pengyu Zhang</h1>
       <p class="role">Senior Engineering Manager<br>Uber</p>
+      <p class="profile-summary">I build secure, scalable AI systems spanning data infrastructure, threat detection, and agent safety. My work connects systems research with production engineering.</p>
 
       <section class="sidebar-section connect" aria-labelledby="connect-title">
         <h2 id="connect-title">Connect</h2>
@@ -24,22 +25,6 @@
         </div>
       </section>
 
-      <section class="sidebar-section sidebar-expertise" aria-labelledby="expertise-title">
-        <h2 id="expertise-title">Expertise</h2>
-        <ul class="tags"><li>Enterprise AI security</li><li>Distributed systems</li><li>Machine learning</li><li>Agent infrastructure</li></ul>
-      </section>
-
-      <section class="sidebar-section sidebar-education" aria-labelledby="education-title">
-        <h2 id="education-title">Education</h2>
-        <div class="credential"><strong>Ph.D., UMass Amherst</strong><span>Computer Science</span></div>
-        <div class="credential"><strong>Stanford University</strong><span>Postdoctoral Researcher</span></div>
-        <div class="credential"><strong>Tsinghua University</strong><span>B.E. and M.E.</span></div>
-      </section>
-
-      <nav class="sidebar-section sidebar-nav" aria-label="Page sections">
-        <h2>Navigation</h2>
-        <a href="#research">Research</a><a href="#engineering">Engineering</a><a href="#publications">Publications</a><a href="#service">Awards &amp; service</a>
-      </nav>
     </aside>
 
     <div class="main-column">
@@ -49,12 +34,7 @@
       </header>
 
       <main>
-        <section class="intro" id="research">
-          <p class="eyebrow">Research + engineering</p>
-          <h2>Building secure, scalable AI systems</h2>
-          <p>I lead teams building large-scale data systems and machine-learning capabilities for threat detection and AI safety. My work connects systems research with production engineering.</p>
-        </section>
-
+        <h2 class="section-title" id="research">Research focus</h2>
         <section class="focus-grid" aria-label="Research focus">
           <article><span>01</span><h3>Enterprise AI security</h3><p>Defense, evaluation, and observability</p></article>
           <article><span>02</span><h3>Distributed systems</h3><p>Data, cloud, and secure containers</p></article>
